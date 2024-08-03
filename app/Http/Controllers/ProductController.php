@@ -49,7 +49,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
 
-        $newPro = DB::table('products')->insert([
+     DB::table('products')->insert([
             'name' => $request->input('name'),
             'price' => $request->input('price'),
             'id_dm' => $request->input('id_dm')
